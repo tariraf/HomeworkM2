@@ -6,22 +6,19 @@ import { albumImg, title, artist } from './Component/Data';
 
 function App() {
     return ( < div className = "App" >
-        <
-        div className = 'song-detail' >
+        <div className = 'song-detail' >
+        
 
-
-        <
-        Songdesc albumImg = { albumImg }
+        <Songdesc 
+        albumImg={albumImg}
         title = { title }
         artist = { artist }
         />
 
-        <
-        Button / >
+        <Button/>
 
-        <
-        /div>   <
-        /div>
+        </div>  
+        </div>
     );
 }
 
