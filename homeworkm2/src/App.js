@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
-import Songdesc from './Component/Songdesc';
-import Button from './Component/Button';
-import { albumImg, title, artist } from './Component/Data';
+import { albumImg, title, artist } from './Songsdata/Data';
+import Cards from './Component/Cards';
+import data from './Songsdata/Datas';
+import React from 'react';
 
 function App() {
-    return ( < div className = "App" >
-        <div className = 'song-detail' >
+    return ( 
+        (<div className='Cards'>
+            
+            { 
+              data.map((e) => (
+              <React.Fragment key = {e.id}>
+               
+                <Cards 
+                albumImg={e.album.images[0].url}
+                title = { e.album.name }
+                url = { e.external_urls.spotify}
+                artist = { e.album.artists[0].name }
+                />
+                
+              </React.Fragment>
+              ))}
+
+            
         
-
-        <Songdesc 
-        albumImg={albumImg}
-        title = { title }
-        artist = { artist }
-        />
-
-        <Button/>
-
-        </div>  
-        </div>
+        </div>)
     );
 }
 

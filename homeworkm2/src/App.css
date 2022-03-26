@@ -37,39 +37,18 @@
     }
 }
 
-.song-detail img {
-    border-radius: 100%;
-    height: 100px;
-    width: 100px;
+body,
+html {
+    background: linear-gradient(176.16deg, #A40D0D 48.79%, rgba(87, 28, 28, 0) 96.86%);
+    background-position: 'center';
+    background-size: 'cover';
+    background-repeat: 'no-repeat';
+    background-attachment: fixed;
+    height: fit-content;
 }
 
-.song-detail {
-    border: 1px solid #141512;
-    min-width: 200px;
-    max-width: min-content;
-    margin: 30px auto;
-    padding: 20px;
-    border-radius: 15px;
-}
-
-.mybtn {
-    width: 80%;
-    padding: 15px;
-    background-color: #141512;
-    color: white;
-    border-radius: 15px;
-    margin-top: 20px;
-}
-
-.by {
-    color: darkgrey;
-}
-
-.song-desc p {
-    margin-top: 1px;
-    font-size: 14px;
-}
-
-.song-desc h3 {
-    margin-bottom: 2px;
+.Cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding : 0 20px;
 }
