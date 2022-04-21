@@ -4,12 +4,13 @@ import Cards from './Component/Cards';
 import data from './Songsdata/Datas';
 import React from 'react';
 import Searchbar from './Component/Searchbar';
+import Home from './Pages/Home';
 function App() {
     return ( 
         (
         
         <div className='container'>
-          <Searchbar />
+          {/* <Searchbar />
           <div className='Cards'>
             
             { 
@@ -27,7 +28,9 @@ function App() {
               ))}
 
             
-          </div>
+          </div> */}
+          <Home />
+          <Searchbar />
         </div>)
     );
 }
